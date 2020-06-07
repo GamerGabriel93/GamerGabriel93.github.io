@@ -24,6 +24,33 @@ li {
     line-height: 30px;
 }
 
+p {
+    font-size: 24px;
+}
+
+.content{
+    color: green;
+    margin: 10px 20px 20px;
+    border: solid 5px red;
+    padding: 5px;
+}
+
 img {
-    width: 200px;
+    width: 14.3%;
+    box-shadow: 3px 3px 7px black;
+    margin: 1%;
+}
+
+.bold {
+    font-weight: bold;
+    color: darkorange;
+}
+
+.img-div {
+    background-color: aqua;
+}
+
+#img-1 {
+    display: inline;
+    visibility: visible;
 }
