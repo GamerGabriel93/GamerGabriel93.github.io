@@ -8,6 +8,8 @@
 html {
     font-family: "vegan";
     text-transform: uppercase;
+    /*background-size: 100%;
+    background-image: url(/img/background.jpg)*/
 }
 
 h1 {
