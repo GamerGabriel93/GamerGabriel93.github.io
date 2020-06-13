@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="css/order-style.css">
     <title>Fantastic burgers - Order</title>
 </head>
+
 <body>
-    
+
     <ul>
         <li>
             <a href="/index.html">Home</a>
@@ -20,35 +22,37 @@
             <a href="/order.html">Order</a>
         </li>
     </ul>
-        
+
     <h1>Fantastic Burgers</h1>
+
+
 
     <fieldset>
         <legend>Order datas</legend>
         <div class="container">
-            <div>
+            <div class="form-group">
                 <label for="name">Name:*</label>
-                <input id="name" type="text" name="name" required>
+                <input id="name" type="text" name="userName" required>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="email">E-mail:*</label>
-                <input id="email" type="email" name="email" required>
+                <input id="email" type="email" name="userEmail" required>
             </div>
 
-            <div>
-                <label for="adress">Adress:*</label>
-                <input id="adress" type="text" name="adress" required>
+            <div class="form-group">
+                <label for="adress">Address:*</label>
+                <input id="adress" type="text" name="userAddress" required>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="telephone">Telephone:*</label>
-                <input id="telephone" type="text" name="telephone" required>
+                <input id="telephone" type="text" name="userTelephone" required>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="comment">Comment: </label>
-                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                <textarea name="userComment" id="comment" cols="30" rows="10"></textarea>
             </div>
 
             <div>
@@ -56,43 +60,79 @@
             </div>
         </div>
     </fieldset>
-    
+
     <br>
 
     <fieldset>
-        <legend>Extras</legend>
-    
-        <div>
+        <legend>Select your burger</legend>
+        <div class="container">
             <div>
-                <input id="nothing" name="extra" type="radio" value="0">
-                <label for="nothing">No extras</label>
+                <input id="buffalo" name="buffalo" type="checkbox">
+                <label for="buffalo">Buffalo burger</label>
             </div>
 
             <div>
-                <input id="cheese" name="extra" type="radio" value="3">
-                <label for="cheese">Cheese</label>
+                <input id="meatLover" name="meatLover" type="checkbox">
+                <label for="meatLover">Meat lover</label>
             </div>
 
             <div>
-                <input id="double-cheese" name="extra" type="radio" value="6">
-                <label for="double-cheese">Double-cheese</label>
+                <input id="vegetarian" name="vegetarian" type="checkbox">
+                <label for="vegetarian">Vegetarian</label>
             </div>
 
             <div>
-                <input id="double-meat" name="extra" type="radio" value="9">
-                <label for="double-meat">Double-meat</label>
-            </div>
-
-            <div>
-                <label for="amount">Amount</label>
-                <input id="amount" name="amount" type="number" min="1" max="10" value="1">
-            </div>
-
-            <div>
-                <input type="button" name="button" id="button" value="Order"> Price:<span> 12 </span>USD
+                <input id="piedone" name="piedone" type="checkbox">
+                <label for="piedone">Piedone</label>
             </div>
         </div>
     </fieldset>
 
+    <br>
+
+    <fieldset>
+        <legend>Extras</legend>
+
+        <div>
+            <div>
+                <input id="nothing" name="extra" type="radio" value="1">
+                <label for="nothing">No extras</label>
+            </div>
+
+            <div>
+                <input id="cheese" name="extra" type="radio" value="2">
+                <label for="cheese">Cheese</label>
+            </div>
+
+            <div>
+                <input id="double-cheese" name="extra" type="radio" value="3">
+                <label for="double-cheese">Double-cheese</label>
+            </div>
+
+            <div>
+                <input id="double-meat" name="extra" type="radio" value="4">
+                <label for="double-meat">Double-meat</label>
+            </div>
+            <br>
+            <div>
+                <label for="amount">Amount</label>
+                <input id="amount" name="amount-input" type="number" min="1" max="10" value="0">
+            </div>
+            
+            <div>
+                <small class="information">Minimum amount is 1. Maximum amount is 10.</small>
+            </div>
+            <br>
+            <div class="form-group">
+                Total: <span class="show-total">0</span> USD
+            </div>
+            <br>
+            <div>
+                <input onclick="calcAmount()" type="button" name="button" id="button" value="Order">
+            </div>
+        </div>
+    </fieldset>
+    <script src="/js/order.js"></script>
 </body>
+
 </html>
