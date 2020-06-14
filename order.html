@@ -85,6 +85,9 @@
                 <input id="piedone" name="piedone" type="checkbox">
                 <label for="piedone">Piedone</label>
             </div>
+            <div>
+                <small class="information">Every burger is 4 USD!</small>
+            </div>
         </div>
     </fieldset>
 
@@ -122,13 +125,16 @@
             <div>
                 <small class="information">Minimum amount is 1. Maximum amount is 10.</small>
             </div>
+            <div>
+                <small class="action">Under 5 burger the delivery price is 2 USD!</small>
+            </div>
             <br>
             <div class="form-group">
                 Total: <span class="show-total">0</span> USD
             </div>
             <br>
             <div>
-                <input onclick="calcAmount()" type="button" name="button" id="button" value="Order">
+                <input onclick="finalValidation()" type="button" name="button" id="button" value="Order">
             </div>
         </div>
     </fieldset>
