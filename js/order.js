@@ -9,6 +9,7 @@ function burgerLimit() {
     let amountNumber = calcAmount();
     if (amountNumber > 10) {
         alert("You can pick maximum 10 burger!")
+        amountNumber = 10;
         return amountNumber;
     }
     else if (amountNumber < 1) {
@@ -24,7 +25,7 @@ function deliveryLimit() {
     if (amountNumber <= 4 && amountNumber > 0) {
         let amount = amountNumber * price + deliveriPrice;
         return amount;
-    } else if (amountNumber >= 5 ) {
+    } else if (amountNumber > 4) {
         let amount = amountNumber * price;
         return amount;
     } else if (amountNumber == 0) {
