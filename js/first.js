@@ -10,6 +10,8 @@ function printout() {
         let data = document.getElementById("answear");
         data.innerHTML = answear;
     }
-    window.location.replace("https://gamergabriel93.github.io/parosszam.html")
     /*Ha ezt is megnézed BALÁZS akkor írj messengeren hogy ASUS!!!!!*/
+}
+function login(){
+    window.location.replace("https://gamergabriel93.github.io/parosszam.html")
 }
