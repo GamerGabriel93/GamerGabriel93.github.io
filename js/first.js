@@ -10,4 +10,5 @@ function printout() {
         let data = document.getElementById("answear");
         data.innerHTML = answear;
     }
+    /*Ha ezt is megnézed BALÁZS akkor írj messengeren hogy ASUS!!!!!*/
 }
