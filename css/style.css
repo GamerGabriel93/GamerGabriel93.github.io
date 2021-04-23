@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "vegan";
+    src: url(font/MetalMania-Regular.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+html {
+    font-family: "vegan";
+    text-transform: uppercase;
+    /*background-size: 100%;
+    background-image: url(/img/background.jpg)*/
+}
+
+h1 {
+    font-size: 48px;
+    color: blue;
+}
+
+h2 {
+    font-size: 32px
+}
+
+li {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+p {
+    font-size: 24px;
+}
+
+.content{
+    color: green;
+    margin: 10px 20px 20px;
+    border: solid 5px red;
+    padding: 5px;
+}
+
+img {
+    width: 14.3%;
+    box-shadow: 3px 3px 7px black;
+    margin: 1%;
+}
+
+.bold {
+    font-weight: bold;
+    color: darkorange;
+}
+
+.img-div {
+    background-color: aqua;
+}
+
+#img-1 {
+    display: inline;
+    visibility: visible;
+}
