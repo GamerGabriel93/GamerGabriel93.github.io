@@ -1,0 +1,72 @@
+.topnav {
+    padding-top: 20px;
+    height: 40px;
+    text-align: center;
+}
+
+.topnav a{
+    text-decoration: none;
+    font-size: 22px;
+    padding-right: 5%;
+    padding-left: 5%;
+    color:white;
+    border: none;
+    display: inline-block;
+    background-color:dodgerblue;
+}
+
+.topnav a:hover {
+    background-color: #4CAF50;
+    color:white;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+body{
+    background-color:black;
+}
+
+.button {
+    background-color:dodgerblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover{
+    background-color: #4CAF50;
+    color:white;
+    cursor: pointer;
+}
+
+.username, .password{
+    border: none;
+    background-color:yellow;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 200px;
+}
+
+.loginform{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.text{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.text a{
+    color:yellow;
+}
