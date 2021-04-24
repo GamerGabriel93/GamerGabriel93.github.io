@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,12 @@
     <title>Bejelentkezés</title>
     <script src="js/first.js"></script>
 </head>
+
 <body>
     <div>
-        <div><h1>Bejelentkezés</h1></div>
+        <div>
+            <h1>Regisztráció</h1>
+        </div>
         <div>
             <span>Felhasználónév:</span>
             <br>
@@ -18,11 +22,21 @@
             <br>
             <span>Jelszó:</span>
             <br>
-            <input id="password" style="width:200px;" type="password">
+            <input id="password" style="width:200px;" type="text">
             <br>
             <br>
-            <input type="button" value="Bejelentkezés" id="login" onclick="check()">
-        </div>        
+            <span>Email:</span>
+            <br>
+            <input id="email" style="width:200px;" type="text">
+            <br>
+            <br>
+            <input type="button" value="Regisztráció" id="registration" onclick="registration()">
+        </div>
+        <div>
+            <br>
+            <input type="button" value="Van már fiókom" id="login" onclick="login()">
+        </div>
     </div>
 </body>
+
 </html>

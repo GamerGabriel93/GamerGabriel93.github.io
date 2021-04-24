@@ -31,3 +31,18 @@ function check() {
         alert('Helytelen adat!');
     }
 }
+
+function registration(){
+    let password = document.getElementById("password").value
+    if (password.length < 8){
+        alert('Nem elég hosszú a jelszó vagy nem adott meg jelszót!');
+
+    }
+    else{
+        alert("Sikeres regisztráció!");
+    }
+}
+
+function login(){
+    window.location.replace("https://gamergabriel93.github.io/login.html")
+}
