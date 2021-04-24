@@ -10,6 +10,7 @@
 html {
     font-family: "vegan";
     text-transform: uppercase;
+    background-image: url("/img/background.jpg");
 }
 
 .topnav a{
@@ -19,8 +20,7 @@ html {
     display: inline-block;
     font-size: 30px;
     color: blue;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-top: 30px;
 }
 
 .topnav a:hover {
@@ -51,8 +51,10 @@ p {
 .content{
     color: green;
     margin: 10px 20px 20px;
-    border: solid 5px red;
+    border: solid 5px blue;
     padding: 5px;
+    width: 500px;
+    text-align: center;
 }
 
 img {
@@ -63,7 +65,7 @@ img {
 
 .bold {
     font-weight: bold;
-    color: darkorange;
+    color: red;
 }
 
 .img-div {
@@ -75,16 +77,40 @@ img {
     visibility: visible;
 }
 .topnav {
-    padding-top: 20px;
+    padding-top: 50px;
     height: 40px;
     text-align: center;
 }
 
 .webpage{
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #webpage{
     text-align: center;
+}
+
+.span{
+    font-size: 22px;
+}
+
+button{
+    width: 200px;
+    font-family: inherit;
+    font-size: 22px;
+    background-color: white;
+    color: black;
+}
+
+button:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+input{
+    height: 30px;
 }

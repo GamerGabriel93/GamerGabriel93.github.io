@@ -20,9 +20,9 @@
         <a href="/login.html">Login</a>
     </div>
     <div class="webpage">
-        <fieldset>
+        <fieldset class="span">
             <legend>Order datas</legend>
-            <div class="container">
+            <div class="container" id="datas">
                 <div class="form-group">
                     <label for="name">Name:*</label>
                     <input id="name" type="text" name="userName" required>
@@ -56,7 +56,7 @@
 
         <br>
 
-        <fieldset>
+        <fieldset class="span">
             <legend>Select your burger</legend>
             <div class="container">
                 <div>
@@ -86,7 +86,7 @@
 
         <br>
 
-        <fieldset>
+        <fieldset class="span">
             <legend>Extras</legend>
 
             <div>
@@ -126,8 +126,8 @@
                     Total: <span class="show-total">0</span> USD
                 </div>
                 <br>
-                <div>
-                    <input onclick="finalValidation()" type="button" name="button" id="button" value="Order">
+                <div class="button-size">
+                    <button onclick="finalValidation()">Order</button>
                 </div>
             </div>
         </fieldset>

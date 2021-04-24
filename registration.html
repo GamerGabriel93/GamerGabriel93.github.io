@@ -11,18 +11,18 @@
 </head>
 
 <body>
+    <div class="topnav">
+        <a href="/index.html">Home</a>
+        <a href="/opening.html">Opening</a>
+        <a href="/order.html">Order</a>
+        <a href="/registration.html">Registration</a>
+        <a href="/login.html">Login</a>
+    </div>
     <div class="webpage">
-        <div class="topnav">
-            <a href="/index.html">Home</a>
-            <a href="/opening.html">Opening</a>
-            <a href="/order.html">Order</a>
-            <a href="/registration.html">Registration</a>
-            <a href="/login.html">Login</a>
-        </div>
         <div>
             <h1>Registration</h1>
         </div>
-        <div>
+        <div class="span">
             <span>Username:</span>
             <br>
             <input id="username" style="width:200px;">
@@ -38,11 +38,11 @@
             <input id="email" style="width:200px;" type="text">
             <br>
             <br>
-            <input type="button" value="Registration" id="registration" onclick="registration()">
+            <button id="registration" onclick="registration()">Registration</button>
         </div>
         <div>
             <br>
-            <input type="button" value="I already have" id="login" onclick="login()">
+            <button id="login" onclick="login()">I already have</button>
         </div>
     </div>
 </body>
