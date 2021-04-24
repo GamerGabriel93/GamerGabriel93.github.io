@@ -14,7 +14,7 @@ function printout() {
 }
 
 var namebase = ["Gábor", "Balázs"];
-var pwbase = ["1234", "abcd"];
+var pwbase = ["1234"];
 
 
 function check() {
@@ -35,11 +35,12 @@ function check() {
 function registration(){
     let password = document.getElementById("password").value
     if (password.length < 8){
-        alert('Nem elég hosszú a jelszó vagy nem adott meg jelszót!');
+        alert('Not enough long or empty password input!');
 
     }
     else{
-        alert("Sikeres regisztráció!");
+        innerHTML = 
+        alert("Registration success!");
     }
 }
 

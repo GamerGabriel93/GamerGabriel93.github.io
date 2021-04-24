@@ -6,22 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bejelentkezés</title>
     <script src="js/first.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
-        <div><h1>Bejelentkezés</h1></div>
+    <div class="webpage">
+        <div class="topnav">
+            <a href="/index.html">Home</a>
+            <a href="/opening.html">Opening</a>
+            <a href="/order.html">Order</a>
+            <a href="/registration.html">Registration</a>
+            <a href="/login.html">Login</a>
+        </div>
+        <div><h1>Login</h1></div>
         <div>
-            <span>Felhasználónév:</span>
+            <span>Username:</span>
             <br>
             <input id="username" style="width:200px;">
             <br>
             <br>
-            <span>Jelszó:</span>
+            <span>Password:</span>
             <br>
             <input id="password" style="width:200px;" type="password">
             <br>
             <br>
-            <input type="button" value="Bejelentkezés" id="login" onclick="check()">
+            <input type="button" value="Login" id="login" onclick="check()">
         </div>        
     </div>
 </body>
