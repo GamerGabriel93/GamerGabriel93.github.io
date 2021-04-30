@@ -13,10 +13,6 @@ function printout() {
     /*Ha ezt is megnézed BALÁZS akkor írj messengeren hogy ASUS!!!!!*/
 }
 
-var namebase = ["Gábor", "Balázs"];
-var pwbase = ["1234"];
-
-
 function check() {
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
@@ -25,7 +21,6 @@ function check() {
             alert('Sikeres bejelentkezés!');
             window.location.replace("https://gamergabriel93.github.io/parosszam.html");
         }
-
     }
     else {
         alert('Helytelen adat!');
@@ -34,14 +29,16 @@ function check() {
 
 function registration(){
     let password = document.getElementById("password").value
+    let username = document.getElementById("username").value
     if (password.length < 8){
-        alert('Not enough long or empty password input!');
-
-    }
+        alert('Not enough long or empty password input!');}
     else{
         innerHTML = 
         alert("Registration success!");
     }
+    namebase.push(username)
+    pwbase.push(password)
+    console.log(namebase, pwbase) 
 }
 
 function login(){
