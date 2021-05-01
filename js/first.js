@@ -1,21 +1,26 @@
+var a = document;
+
 function printout() {
-    let szam = document.getElementById("data").value;
+    let szam = a.getElementById("data").value;
     if (szam % 2 == 0) {
         let answear = "A(z) " + szam + " páros!";
-        let data = document.getElementById("answear");
+        let data = a.getElementById("answear");
         data.innerHTML = answear;
     }
     else {
         let answear = "A(z) " + szam + " páratlan!";
-        let data = document.getElementById("answear");
+        let data = a.getElementById("answear");
         data.innerHTML = answear;
     }
-    /*Ha ezt is megnézed BALÁZS akkor írj messengeren hogy ASUS!!!!!*/
 }
 
+let namebase = ["Gábor", "Balázs"];
+let pwbase = ["1234"];
+
+
 function check() {
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
+    let username = a.getElementById("username").value;
+    let password = a.getElementById("password").value;
     if (namebase.includes(username)) {
         if (pwbase.includes(password)) {
             alert('Sikeres bejelentkezés!');
@@ -28,8 +33,8 @@ function check() {
 }
 
 function registration(){
-    let password = document.getElementById("password").value
-    let username = document.getElementById("username").value
+    let password = a.getElementById("password").value
+    let username = a.getElementById("username").value
     if (password.length < 8){
         alert('Not enough long or empty password input!');}
     else{
