@@ -29,4 +29,16 @@ html {
 .colors{
     background-color: black;
     color:#00ff00;
+    border-color: #ff0000;
+    margin-top: 20px;
+}
+
+.button:hover{
+    background-color: black;
+    border-color: #0000FF;
+    cursor: pointer;
+}
+
+input:hover{
+    border-color: #0000FF;
 }
