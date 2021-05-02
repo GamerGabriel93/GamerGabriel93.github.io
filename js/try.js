@@ -1,13 +1,15 @@
 var a = document;
-var table = [];
-
 
 function getname() {
-  var adat = a.getElementById("data").value;
-  table.push(adat);
-  document.getElementById("data").value = '';
-  window.location.replace("https://gamergabriel93.github.io/teszt2.html");
+  const adat = a.getElementById("data").value;
+  
+  localStorage.setItem("name", adat);
+  
+  a.getElementById("data").value = '';
+  window.location.replace("http://127.0.0.1:5500/teszt2.html");
 
+  return;
+  
   /*var today = new Date();
   var day = today.getFullYear() + "/" + String(today.getMonth()+1).padStart(2,'0') + "/" + String(today.getDate()).padStart(2,'0');
   var time = String(today.getHours()).padStart(2,'0') + ":" + String(today.getMinutes()).padStart(2,'0');
