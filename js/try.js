@@ -6,7 +6,7 @@ function getname() {
   localStorage.setItem("name", adat);
   
   a.getElementById("data").value = '';
-  window.location.replace("http://127.0.0.1:5500/teszt2.html");
+  window.location.replace("https://gamergabriel93.github.io/teszt2.html");
 
   return;
   
