@@ -1,3 +1,8 @@
+@font-face{
+    font-family: newstyle;
+    src: url(PressStart2P-Regular.ttf)
+}
+
 * {
     box-sizing: border-box;
   }
@@ -20,10 +25,10 @@
     padding: 15px;
   }
 
-html {
-    font-family:monospace;
+html{
     background-color: black;
     color:#00ff00;
+    text-align: center;
 }
 
 .colors{
@@ -41,4 +46,9 @@ html {
 
 input:hover{
     border-color: #0000FF;
+}
+
+.font{
+    font-family: newstyle;
+    font-size: 14px;
 }
